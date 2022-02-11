@@ -1,0 +1,16 @@
+{
+  "name": "udagram-api",
+  "version": "2.0.0",
+  "description": "",
+  "scripts": {
+    "setup": "cd api && npm install && cd ../frontend && npm install && cd ..",
+    "build:api": "cd api && npm run build",
+    "build:frontend": "cd frontend && npm run build && cd ..",
+    "deploy:api": "cd api && npm run deploy && cd ..",
+    "deploy:frontend": "cd frontend && aws s3 cp --recursive --acl public-read ./www s3://my-456490970410-bucket/ && cd ..",
+    "test": "cd frontend && npm run test && cd .."
+  },
+  "keywords": [],
+  "author": "Gabriel Ruttner",
+  "license": "ISC"
+}
