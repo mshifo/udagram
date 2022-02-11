@@ -24,14 +24,14 @@ jobs:
             chromedriver --version
           name: Check Browser installation
       - run:
-          command: npm run test
-          name: Test the project
-      - run:
           command: npm run build:api
           name: Build the API project
       - run:
           command: npm run build:frontend
           name: Build the frontend project
+      - run:
+          command: npm run test
+          name: Test the project
       - run:
           command: npm run deploy:api
           name: deploy the API project
