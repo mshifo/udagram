@@ -32,3 +32,11 @@ jobs:
       - run:
           command: npm run deploy:frontend
           name: deploy the frontend project
+workflows:
+  udagram:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only:
+                - main
