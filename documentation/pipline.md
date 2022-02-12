@@ -16,4 +16,6 @@ CircleCI is a continuous integration tool. It allows for rapid deployment of cod
 - CircleCI runs the unit testing
 - CircleCI deploys the 2 projects
 
+![Pipeline](pipline.png)
+
 

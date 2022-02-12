@@ -4,4 +4,6 @@
 
 2- the angular front end application call the backend apis through HTTP requests  which is hosted and configured on amazon beanstalk 
 
-3- the amazon beanstalk make SQL queries on the postgres RDS
+3- the amazon beanstalk make SQL queries on the postgres RDS and get the result back
+
+![Infrastructure](infrastructure.png)
